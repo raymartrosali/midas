@@ -1,0 +1,167 @@
+body, html{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background: #0c0d0d;
+	font-family: 'Oswald', sans-serif;
+	color: #d7d7d7;
+}
+/*Containers*/
+.flex-cont{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	vertical-align:middle;
+	text-align: center;
+	flex-wrap: wrap;
+}
+.first-cont{
+	height: 100vh;
+	background-image:url('../img/headerDes.jpg');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position:center;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+}
+.third-cont{
+	min-height: 100vh;
+	background-image:url('../img/studio.jpg');
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position:center;
+	background-size:cover;
+	background-position:center;
+	text-align: center;
+}
+.project-nav{
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: baseline;
+	padding: 20px;
+}
+
+.about-cont{
+
+	border: 3.5px solid #eee1c5;
+	padding: 50px 40px;
+	text-align: right;
+	justify-content: right;
+	display: inline-block;
+	min-width: 205px;
+	max-width: 405px;
+	font-size: 20px;
+}
+/*Containers*/
+/*Container Items*/
+.heading{
+	color: #eee1c5;
+	font-size: 60px;
+}
+.first-cont-items{
+	display: block;
+	color: #d7d7d7;
+	text-align: center;
+	width: 100%;
+
+}
+.first-cont-items{
+	display: block;
+	color: #d7d7d7;
+	text-align: center;
+	width: 100%;
+}
+.first-cont img{
+	width: 100%;
+	min-width:170px; 
+	max-width: 190px;
+	animation-name: imageShow;
+  	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+.first-cont font{
+	font-size: 40px;
+	letter-spacing: 17px;
+	transition: 0.5s;
+	animation-name: fontConnect;
+  	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+.btnFirstCont{
+	padding: 2.5px 10px;
+	border: 1.5px solid #d7d7d7;
+	color: #d7d7d7;
+	font-size: 20px;
+	letter-spacing: 2.5px;
+	cursor: pointer;
+	transition: 0.5s;
+	margin: 5px;
+}
+.btnFirstCont:hover{
+	color: #0c0d0d;
+	background: #d7d7d7;
+}
+.project-nav .btnFirstCont{
+	border: 1.5px solid #eee1c5;
+	color: #eee1c5;
+	font-size: 25px;
+}
+.project-nav .btnFirstCont:hover{
+	background: #eee1c5;
+	color: #0c0d0d;
+}
+.btn-active{
+	color: #0c0d0d!important;
+	background: #eee1c5;
+}
+hr{
+	height: 15px;
+    width: 100px;
+    margin: 0;
+    border: none;
+    background: #eee1c5;
+}
+/*Container Items*/
+/*Grid System*/
+.div-three{
+	width: 30%;
+}
+.div-four{
+	width: 40%;
+}
+/*RESET CSS*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.div-three  img{
+	display: block;
+}
+h1{
+	margin: 0;
+}
+button{
+    background: none;
+    border: none;
+    font-family: 'Oswald', sans-serif;
+}
+/*Animation*/
+@keyframes fontConnect{
+  from{
+    letter-spacing: 0px;
+  }
+  to{
+    letter-spacing: 17px;
+  }
+}
+@keyframes imageShow{
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}

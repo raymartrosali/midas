@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Midas</title>
+	<meta name="description" content="">
+	<meta name="author" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="icon" href="img/logo.png">
+	<link rel="stylesheet" media="screen" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+</head>
+<body>
+<section class="first-cont flex-cont">
+	<div class="first-cont-items">
+		<img src="img/logo.png">
+		<br/>
+		<br/>
+		<font>PRODUCTIONS</font>
+		<br/>
+		<br/>
+		<button class="btnFirstCont">LEARN MORE</button>
+	 </div>
+</section>
+<section class="flex-cont">
+	<div class="div-three">
+		<img src="img/leftPic.jpg" style="width:100%">
+	</div>
+	<div class="div-four">
+		<div class="about-cont">
+			<h1 class="heading">ABOUT US</h1>
+			LOREM IPSUM DOLOR<br>
+			ISMET JUNCTION LOREM IPSUM<br>
+			LOREM IPSUM DOLOR<br>
+			FOR DESIGN PURPOSES ONLY<br>
+			
+			<br>
+			<button class="btnFirstCont">VIEW PROJECTS</button>
+		</div>
+	</div>
+	<div class="div-three">
+		<img src="img/rightPic.jpg" style="width:100%">
+	</div>
+</section>
+
+<section class="third-cont">
+	<div class="project-nav" style="display:flex;flex-wrap: nowrap;align-items: baseline">
+		<div style="width:100%;text-align:left">
+			<h1 class="heading">OUR WORKS</h1>
+			<hr align="left">
+		</div>
+		<div style="width:100%;text-align:right;">
+			<button class="btnFirstCont btn-proj btn-active" onclick="activeSelector(event)">PHOTOGRAPHY</button>
+			<button class="btnFirstCont btn-proj" onclick="activeSelector(event)">VIDEOGRAPHY</button>
+		</div>
+	</div>
+	
+</section>
+</body>
+</html>
+<script type="text/javascript">
+	let buttonProject = document.querySelectorAll(".btn-proj");
+
+	function activeSelector(event){
+		for (var i = 0; i < buttonProject.length; i++) {
+			buttonProject[i].classList.remove("btn-active");
+		}
+		event.target.classList.add("btn-active");
+	}
+</script>
