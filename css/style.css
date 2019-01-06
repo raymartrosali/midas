@@ -41,9 +41,33 @@ body, html{
 	align-items: baseline;
 	padding: 20px;
 }
+.project-cont{
+	width: 1000px;
+	display: inline-block;
+}
+.project-nav div{
+	width:100%;
+	text-align:left;
+}
+.project-nav div:nth-child(2){
+	width:100%;
+	text-align:right;
+}
+.third-img{
+	text-align: center;
+	width: 30%;
+
+}
+.third-img img{
+	width: 230px;
+	border-radius: 50%;
+}
+.third-text{
+	text-align: left;
+	width: 70%;
+}
 
 .about-cont{
-
 	border: 3.5px solid #eee1c5;
 	padding: 50px 40px;
 	text-align: right;
@@ -88,6 +112,94 @@ body, html{
   	animation-duration: 1s;
 	animation-iteration-count: 1;
 }
+.contact-cont{
+	width: 50%;
+	text-align: center;
+	display: block
+}
+.cont-input{
+	width: 100%;
+	max-width: 300px;
+	display: inline-block;
+	margin: 10px;
+	padding:10px 10px 10px 45px;
+	background: #161717;
+	border: 1.5px solid #eccb84;
+}
+.cont-textarea{
+	width: 100%;
+	max-width: 345px;
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	background: #161717;
+	border: 1.5px solid #eccb84;
+}
+.cont-input input, .cont-textarea textarea{
+	width: 100%;
+	font-size: 15px;
+	border: none;
+	background: #161717;
+	color: #eee;
+	font-family: 'Oswald', sans-serif;
+
+}
+ .cont-textarea textarea{
+ 	resize: none;
+ 	height: 140px;
+ }
+ .contact-btn{
+ 	width: 100%;
+ 	max-width: 360px;
+ 	border: 1.5px solid #eccb84;
+ 	background: #eccb84;
+ 	padding: 7.5px;
+ 	font-size: 18px;
+ 	margin-top: 10px;
+ 	font-weight: bold;
+ 	letter-spacing: 2px;
+ 	cursor: pointer;
+ 	transition: 0.5s;
+ }
+ .contact-btn:hover{
+ 	background: none;
+ 	color: #eccb84;
+ }
+ footer{
+ 	color: #161717;
+ 	padding: 10px;
+ 	background: #bd9641;
+ }
+.input-name:before{
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f007";
+	margin-left: 20px;
+	position: absolute;
+	margin: 2px -30px;
+    font-size: 20px;
+    color: #eccb84;
+}
+.input-number:before{
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f095";
+	margin-left: 20px;
+	position: absolute;
+	margin: 2px -30px;
+    font-size: 20px;
+    color: #eccb84;
+}
+.input-mail:before{
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f0e0";
+	margin-left: 20px;
+	position: absolute;
+	margin: 2px -30px;
+    font-size: 20px;
+    color: #eccb84;
+}
 .btnFirstCont{
 	padding: 2.5px 10px;
 	border: 1.5px solid #d7d7d7;
@@ -96,7 +208,7 @@ body, html{
 	letter-spacing: 2.5px;
 	cursor: pointer;
 	transition: 0.5s;
-	margin: 5px;
+
 }
 .btnFirstCont:hover{
 	color: #0c0d0d;
@@ -106,10 +218,24 @@ body, html{
 	border: 1.5px solid #eee1c5;
 	color: #eee1c5;
 	font-size: 25px;
+	margin: 5px;
 }
 .project-nav .btnFirstCont:hover{
 	background: #eee1c5;
 	color: #0c0d0d;
+}
+.project-cont .btnFirstCont{
+	font-size: 20px;
+}
+.row-side{
+	flex-direction: row;
+	margin-top: 20px;
+}
+.row-side:nth-child(even){
+	flex-direction: row-reverse;
+}
+.row-side:nth-child(even) .third-text{
+	text-align: right;
 }
 .btn-active{
 	color: #0c0d0d!important;
