@@ -24,6 +24,7 @@ body, html{
 	background-size:cover;
 	background-position:center;
 	text-align: center;
+	display: flex!important;
 }
 .third-cont{
 	min-height: 100vh;
@@ -290,4 +291,43 @@ button{
   to{
     transform: scale(1);
   }
+}
+@media (max-width: 1000px){
+	.flex-cont{
+		display: block;
+	}
+	.project-cont, .third-img, .third-text, .contact-cont, .div-four, .div-three{
+		width: auto;
+	}
+	.third-img, .third-text, .contact-cont:nth-child(1){
+		padding: 10px;
+	}
+	.contact-cont:nth-child(1){
+		margin-bottom: 20px;
+	}
+	.mob-hide{
+		display: none;
+	}
+	.about-cont{
+		margin: 5px;
+	}
+	.third-text{
+		text-align: left!important;
+	}
+	.project-nav{
+		display: block;
+	}
+	.first-cont font {
+	    letter-spacing: 5px;
+	}
+	.cont-input{
+		margin: 0px 0px 10px 0px;
+		max-width: 80%;
+		width: 80%;
+	}
+	.cont-textarea{
+		width: 95%;
+		max-width: 95%;
+		margin: 0px;
+	}
 }
