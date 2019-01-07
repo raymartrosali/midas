@@ -311,6 +311,9 @@ button{
 	.about-cont{
 		margin: 40px 5px;
 	}
+	.input-name{
+		margin-top: 20px!important;
+	}
 	.third-text{
 		text-align: left!important;
 	}
